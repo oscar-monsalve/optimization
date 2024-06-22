@@ -88,13 +88,13 @@ Then, we can use the following relationships to put the two differential equatio
 
 $V = \sqrt{V_x^2 + V_y^2}$ and $V^2 = V_x^2 + V_y^2$
 
-$\cos(\theta) = \displaystyle \frac{V_y}{V} = \displaystyle \frac{V_y}{\sqrt{V_y^2 + V_y^2}}$ and $\cos(\theta) = \displaystyle \frac{V_y}{V} = \displaystyle \frac{V_y}{\sqrt{V_y^2 + V_y^2}}$
+$\cos(\theta) = \displaystyle \frac{V_x}{V} = \displaystyle \frac{V_x}{\sqrt{V_x^2 + V_y^2}}$ and $\sin(\theta) = \displaystyle \frac{V_y}{V} = \displaystyle \frac{V_y}{\sqrt{V_x^2 + V_y^2}}$
 
 Substituting these into the previous two equations gives:
 
 $$m\ddot{x} = m\dot{V}_x = -\displaystyle \frac{1}{2}C_d \rho s V_x \sqrt{V_x^2 + V_y^2}$$
 
-$$m\ddot{y} = m\dot{V}_y = -\displaystyle \frac{1}{2}C_d \rho s V_y \sqrt{V_y^2 + V_y^2} - mg$$
+$$m\ddot{y} = m\dot{V}_y = -\displaystyle \frac{1}{2}C_d \rho s V_y \sqrt{V_x^2 + V_y^2} - mg$$
 
 
 
