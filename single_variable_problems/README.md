@@ -15,4 +15,4 @@ $t = t_s + t_w$
 where $t$ is the total time, and $t_s,\\,t_w$ are the times over the sand and water, respectively.
 
 
-<img src="images/1.lifeguard.png" alt="The lifeguard problem" width="500" height="auto"/>
+<img src="images/1.lifeguard.png" alt="The lifeguard problem" width="400" height="auto"/>
