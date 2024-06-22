@@ -86,9 +86,9 @@ We don’t want $\theta$ to appear in the equations, so we will define $\theta$ 
 
 Then, we can use the following relationships to put the two differential equations in their final form.
 
-$$V = \sqrt{V_x^2 + V_y^2}$$ and $$V^2 = V_x^2 + V_y^2$$
+$V = \sqrt{V_x^2 + V_y^2}$ and $V^2 = V_x^2 + V_y^2$
 
-$$\cos(\theta) = \displaystyle \frac{V_y}{V} = \displaystyle \frac{V_y}{\sqrt{V_y^2 + V_y^2}}$ and $\cos(\theta) = \displaystyle \frac{V_y}{V} = \displaystyle \frac{V_y}{\sqrt{V_y^2 + V_y^2}}$$
+$\cos(\theta) = \displaystyle \frac{V_y}{V} = \displaystyle \frac{V_y}{\sqrt{V_y^2 + V_y^2}}$ and $\cos(\theta) = \displaystyle \frac{V_y}{V} = \displaystyle \frac{V_y}{\sqrt{V_y^2 + V_y^2}}$
 
 Substituting these into the previous two equations gives:
 
