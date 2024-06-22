@@ -96,7 +96,15 @@ $$m\ddot{x} = m\dot{V}_x = -\displaystyle \frac{1}{2}C_d \rho s V_x \sqrt{V_x^2 
 
 $$m\ddot{y} = m\dot{V}_y = -\displaystyle \frac{1}{2}C_d \rho s V_y \sqrt{V_x^2 + V_y^2} - mg$$
 
+Before we can solve these equations, we need some initial conditions. If we write the equations in terms of position,
+there are two second-order equations, so we will need four initial conditions. Let’s assume the ball starts at the
+origin, so $x(0) = 0$ and $y(0) = 0$. Let’s also assume that the initial velocity is 50 m/s and the launch angle is
+$45^{\circ}$, so our initial conditions are:
 
+$$x(0) = 0$$
 
+$$y(0) = 0$$
 
+$$\dot{x}(0) = V_0\cos(0)$$
 
+$$\dot{y}(0) = V_0\sin(0)$$
