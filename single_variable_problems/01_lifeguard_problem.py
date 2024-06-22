@@ -17,9 +17,9 @@ min_y = y[min_index]
 plt.plot(x, y, label='Lifeguard Time')
 plt.scatter(optimum_x, min_y, color='red', zorder=5)  # Adding the point
 plt.annotate(f'Min Time: {min_y:.2f}\nat x: {optimum_x:.2f}', xy=(optimum_x, min_y),
-             xytext=(optimum_x-5, min_y+5),
+             xytext=(optimum_x-8, min_y+5),
              arrowprops=dict(facecolor='black', arrowstyle='->'),
-             fontsize=8)
+             fontsize=10)
 
 plt.xlabel('x (m)')
 plt.ylabel(r'Time $t$ (s)')
