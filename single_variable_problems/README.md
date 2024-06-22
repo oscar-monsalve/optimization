@@ -62,11 +62,11 @@ $\rho = 1.23\\; kg/m^3$ at sea level. $V$ is velocity and $s$ is the cross-secti
 
 Drag can be broken down into the $x$ and $y$ directions, so we can write Newton’s law in both directions.
 
-$$D_x = D\cos(\theta)$$ and $$D_y = D\sin(\theta)$$
+$D_x = D\cos(\theta)$ and $D_y = D\sin(\theta)$
 
-$x$ direction $$\sum F_x = ma_x$ $\rightarrow$$ $$-D_x = ma_x = m\ddot{x}$$
+$x$ direction $\sum F_x = ma_x$ $\rightarrow$ $-D_x = ma_x = m\ddot{x}$
 
-$y$ direction $$\sum F_y = ma_y$$ $$\rightarrow$ $-D_y - mg = ma_y = m\ddot{y}$$
+$y$ direction $\sum F_y = ma_y$ $\rightarrow$ $-D_y - mg = ma_y = m\ddot{y}$
 
 So the system of equations to be solved is:
 
