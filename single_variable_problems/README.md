@@ -7,6 +7,11 @@ single-variable exercises from the book "Optimization Fundamentals (2018, Spring
 Find a path to the swimmer that minimizes time, see Figure 1. The objective function is time, and the
 design variable is x, the point at which the lifeguard enters the water.
 
+<figure>
+    <img src="images/01_lifeguard_problem.png" alt="The lifeguard problem" width="400" height="auto"/>
+    <figcaption>Figure 1. The lifeguard problem.</figcaption>
+</figure>
+
 The objective function must be written as a function of the design variable. First, the total time is the sum of
 the times that take the lifeguard to go over the sand and water:
 
@@ -23,6 +28,6 @@ $t(x) = \displaystyle \frac{1}{7}\sqrt{50^2+x^2} + \displaystyle \frac{1}{2}\sqr
 The optimum solution, meaning the minimum time, can be easily found looking for the plot's minimum coordinates.
 
 <figure>
-    <img src="images/1.lifeguard.png" alt="The lifeguard problem" width="400" height="auto"/>
+    <img src="images/01_lifeguard_time_function.png" alt="The lifeguard problem" width="400" height="auto"/>
     <figcaption>Figure 1. The lifeguard problem.</figcaption>
 </figure>
