@@ -13,6 +13,8 @@ design variable is x, the point at which the lifeguard enters the water.
     <br>
 </figure>
 
+<br>
+
 The objective function must be written as a function of the design variable. First, the total time is the sum of
 the times that take the lifeguard to go over the sand and water:
 
