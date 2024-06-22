@@ -16,6 +16,12 @@ where $t$ is the total time, and $t_s,\\,t_w$ are the times over the sand and wa
 the straight line lengths over the sand and water, respectively. $v_s,\\, v_w$ are the velocities of the lifeguard
 over the sand and water, respectively.
 
+Then, using the Pythogorean theorem, we can find the straight line lengths. Then, the objective function is:
+
+$t(x) = \displaystyle \frac{1}{7}\sqrt{50^2+x^2} + \displaystyle \frac{1}{2}\sqrt{50^2+(100-x)^2}$
+
+The optimum solution, meaning the minimum time, can be easily found looking for the plot's minimum coordinates.
+
 <figure>
     <img src="images/1.lifeguard.png" alt="The lifeguard problem" width="400" height="auto"/>
     <figcaption>Figure 1. The lifeguard problem.</figcaption>
