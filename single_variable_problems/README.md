@@ -163,7 +163,7 @@ For this, we evaluate the range or travelled distance as a function of the launc
 velocity of $V_0 = 50\\; m/s$.
 
 <figure>
-    <img src="images/02_projectile_sol_1_angle.png" alt="projectile_optimum_angle" width="400" height="auto"/>
+    <img src="images/02_projectile_optimum_angle.png" alt="projectile_optimum_angle" width="400" height="auto"/>
     <figcaption>Figure 5. Optimum angle to maximize the range of the projectile for an initial velocity of 50 m/s.</figcaption>
     <br>
 </figure>
