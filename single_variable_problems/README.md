@@ -92,19 +92,34 @@ $\cos(\theta) = \displaystyle \frac{V_x}{V} = \displaystyle \frac{V_x}{\sqrt{V_x
 
 Substituting these into the previous two equations gives:
 
-$$m\ddot{x} = m\dot{V}_x = -\displaystyle \frac{1}{2}C_d \rho s V_x \sqrt{V_x^2 + V_y^2}$$
+$$\ddot{x} = -C V_x \sqrt{V_x^2 + V_y^2}$$
 
-$$m\ddot{y} = m\dot{V}_y = -\displaystyle \frac{1}{2}C_d \rho s V_y \sqrt{V_x^2 + V_y^2} - mg$$
+$$\ddot{y} = -C V_y \sqrt{V_x^2 + V_y^2} - g$$
+
+where
+
+$C = \displaystyle \frac{1}{2m}\rho s C_d$ is a constant containing all physical considerations.
 
 Before we can solve these equations, we need some initial conditions. If we write the equations in terms of position,
-there are two second-order equations, so we will need four initial conditions. Let’s assume the ball starts at the
-origin, so $x(0) = 0$ and $y(0) = 0$. Let’s also assume that the initial velocity is 50 m/s and the launch angle is
-$45^{\circ}$, so our initial conditions are:
+there are two second-order equations, so we will need four initial conditions:
 
-$$x(0) = 0$$
+- Let’s assume the ball starts at the origin, so $x(0) = 0$ and $y(0) = 0$.
+- Let’s also assume that the initial velocity is $V_0 = 50\\; m/s$.
+- The launch angle is $45^{\circ}$.
 
-$$y(0) = 0$$
+The intial conditions are:
 
-$$\dot{x}(0) = V_0\cos(0)$$
+- $x(0) = 0$
+- $y(0) = 0$
+- $\dot{x}(0) = V_0\cos(\theta_0)$
+- $\dot{y}(0) = V_0\sin(\theta_0)$
 
-$$\dot{y}(0) = V_0\sin(0)$$
+To solve numerically in Python the two-coupled second order linear ODE's, we need to reduce the order of each
+differential equation. To do so, we make use of the state-space representation introducing two new variables $v_x$
+and $v_y$. Then, we define them as $v_x = \dot{x}$ and $v_y = \dot{y}$. With this, we can construct 4 first order
+ODE's:
+
+- $v_x = \dot{x}$
+- $\dot{v}_x = \ddot{x} = -Cv_x \sqrt{v_x^2 + v_y^2}$
+- $v_y = \dot{y}$
+- $\dot{v}_y = \ddot{y} = -Cv_y \sqrt{v_x^2 + v_y^2}$
