@@ -105,7 +105,7 @@ there are two second-order equations, so we will need four initial conditions:
 
 - Let’s assume the ball starts at the origin, so $x(0) = 0$ and $y(0) = 0$.
 - Let’s also assume that the initial velocity is $V_0 = 50\\; m/s$.
-- The launch angle is $45^{\circ}$.
+- The launch angle is $\theta_0 = 45^{\circ}$.
 
 The intial conditions are:
 
@@ -116,10 +116,33 @@ The intial conditions are:
 
 To solve numerically in Python the two-coupled second order linear ODE's, we need to reduce the order of each
 differential equation. To do so, we make use of the state-space representation introducing two new variables $v_x$
-and $v_y$. Then, we define them as $v_x = \dot{x}$ and $v_y = \dot{y}$. With this, we can construct 4 first order
-ODE's:
+and $v_y$. Then, we define them as $v_x = \dot{x}$ and $v_y = \dot{y}$. With this, we can construct 4-coupled first-
+order linear ODE's:
 
-- $v_x = \dot{x}$
+- $\dot{x} = v_x$
 - $\dot{v}_x = \ddot{x} = -Cv_x \sqrt{v_x^2 + v_y^2}$
-- $v_y = \dot{y}$
-- $\dot{v}_y = \ddot{y} = -Cv_y \sqrt{v_x^2 + v_y^2}$
+- $\dot{y} = v_y$
+- $\dot{v}_y = \ddot{y} = -Cv_y \sqrt{v_x^2 + v_y^2} - g$
+
+Now, we have six coupled first order ODE's. We want to solve for $\dot{x},\\; v_x,\\; \dot{y},\\; v_y$. Rewriting
+them in vector form we have the following:
+
+$$
+\vec{S} = \begin{bmatrix}
+x \\
+v_x \\
+y \\
+v_y
+\end{bmatrix} \Longrightarrow
+\displaystyle \frac{d\vec{S}}{dt} = \begin{bmatrix}
+\dot{x} \\
+\dot{v}_x \\
+\dot{y} \\
+\dot{v}_y
+\end{bmatrix} = \begin{bmatrix}
+v_x \\
+-Cv_x\sqrt{v_x^2 + v_y^2} \\
+v_y \\
+-Cv_y\sqrt{v_x^2 + v_y^2}
+\end{bmatrix}
+$$
