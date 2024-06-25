@@ -152,6 +152,20 @@ See the file "02_projectile.py" for the programming of this problem. The solutio
 <figure>
     <img src="images/02_projectile_sol_1_angle.png" alt="projectile sol 1 angle" width="400" height="auto"/>
     <figcaption>Figure 4. Solution to the coupled ODE's for 1 launch angle.</figcaption>
+    <br>
 </figure>
 
+<br>
+
 Now, the question is: for which launch angle the maximum range is obtained?
+
+For this, we evaluate the range or travelled distance as a function of the launch angle $\theta_0$ and an initial
+velocity of $V_0 = 50\\; m/s$.
+
+<figure>
+    <img src="images/02_projectile_sol_1_angle.png" alt="projectile_optimum_angle" width="400" height="auto"/>
+    <figcaption>Figure 5. Optimum angle to maximize the range of the projectile for an initial velocity of 50 m/s.</figcaption>
+    <br>
+</figure>
+
+<br>
