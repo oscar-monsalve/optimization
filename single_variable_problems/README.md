@@ -47,7 +47,7 @@ of the aerodynamic drag.
 
 <figure>
     <img src="images/02_ball_projectile_drag_components.png" alt="Figure 2. Drag components" width="400" height="auto"/>
-    <figcaption>Figure 2. Drag components.</figcaption>
+    <figcaption>Figure 3. Drag components.</figcaption>
     <br>
 </figure>
 
@@ -78,7 +78,7 @@ We don’t want $\theta$ to appear in the equations, so we will define $\theta$ 
 
 <figure>
     <img src="images/02_ball_projectile_vel_components.png" alt="Figure 3. Velocity components" width="400" height="auto"/>
-    <figcaption>Figure 3. Velocity components.</figcaption>
+    <figcaption>Figure 4. Velocity components.</figcaption>
     <br>
 </figure>
 
@@ -151,7 +151,7 @@ See the file "02_projectile.py" for the programming of this problem. The solutio
 
 <figure>
     <img src="images/02_projectile_sol_1_angle.png" alt="projectile sol 1 angle" width="400" height="auto"/>
-    <figcaption>Figure 4. Solution to the coupled ODE's for 1 launch angle.</figcaption>
+    <figcaption>Figure 5. Solution to the coupled ODE's for 1 launch angle.</figcaption>
     <br>
 </figure>
 
@@ -164,7 +164,7 @@ velocity of $V_0 = 50\\; m/s$.
 
 <figure>
     <img src="images/02_projectile_optimum_angle.png" alt="projectile_optimum_angle" width="400" height="auto"/>
-    <figcaption>Figure 5. Optimum angle to maximize the range of the projectile for an initial velocity of 50 m/s.</figcaption>
+    <figcaption>Figure 6. Optimum angle to maximize the range of the projectile for an initial velocity of 50 m/s.</figcaption>
     <br>
 </figure>
 
