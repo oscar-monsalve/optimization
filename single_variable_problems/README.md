@@ -143,6 +143,6 @@ v_y
 v_x \\
 -Cv_x\sqrt{v_x^2 + v_y^2} \\
 v_y \\
--Cv_y\sqrt{v_x^2 + v_y^2}
+-Cv_y\sqrt{v_x^2 + v_y^2} - g
 \end{bmatrix}
 $$
