@@ -124,7 +124,7 @@ order linear ODE's:
 - $\dot{y} = v_y$
 - $\dot{v}_y = \ddot{y} = -Cv_y \sqrt{v_x^2 + v_y^2} - g$
 
-Now, we have six coupled first order ODE's. We want to solve for $\dot{x},\\; v_x,\\; \dot{y},\\; v_y$. Rewriting
+Now, we have six coupled first order ODE's. We want to solve for $x,\\; v_x,\\; y,\\; v_y$. Rewriting
 them in vector form we have the following:
 
 $$
@@ -146,3 +146,12 @@ v_y \\
 -Cv_y\sqrt{v_x^2 + v_y^2} - g
 \end{bmatrix}
 $$
+
+See the file "02_projectile.py" for the programming of this problem. The solution for 1 launch angle is:
+
+<figure>
+    <img src="images/02_projectile_sol_1_angle.png" alt="projectile sol 1 angle" width="400" height="auto"/>
+    <figcaption>Figure 4. Solution to the coupled ODE's for 1 launch angle.</figcaption>
+</figure>
+
+Now, the question is: for which launch angle the maximum range is obtained?
