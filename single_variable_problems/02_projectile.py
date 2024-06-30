@@ -87,6 +87,21 @@ def get_distance(angle: float, v: float, t=10) -> float:
 angles = np.linspace(25, 60, 300)
 x_locs = np.vectorize(get_distance)(angles, V_0)
 
+
+# Plotting
+
+# Plot x and y for one angle
+plt.plot(x_sol, y_sol, label=f"Launch angle: {theta_0*180/np.pi}°\nInitial Velocity: {V_0} m/s")
+plt.title("Projectile with air friction")
+plt.ylabel(r"$y\; (m)$")
+plt.xlabel(r"$x\; (m)$")
+plt.ylim(top=30)
+plt.ylim(bottom=0)
+plt.legend()
+plt.gca().set_aspect('equal', 'box')
+plt.tight_layout()
+plt.show()
+
 # Plot the travelled distance as a function of the launch angle and V_0 = 50 m/s
 max_index = np.argmax(x_locs)
 optimum_angle = angles[max_index]
@@ -104,6 +119,7 @@ plt.title(r"Launch angles vs. travelled distance (range) for $V_0 = 50\; m/s$")
 plt.xlim(left=25, right=60)
 plt.grid(True)
 plt.show()
+<<<<<<< HEAD
 
 # Plot x and y
 plt.plot(x_sol, y_sol, label=f"Launch angle: {theta_0*180/np.pi}°\nInitial Velocity: {V_0} m/s")
@@ -116,3 +132,5 @@ plt.legend()
 plt.gca().set_aspect('equal', 'box')
 plt.tight_layout()
 plt.show()
+=======
+>>>>>>> 97be079a7166a30e18ed201ab788bcc952e76f49
