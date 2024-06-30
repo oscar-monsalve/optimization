@@ -2,7 +2,10 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+import scienceplots
 from scipy.integrate import odeint
+
+plt.style.use(["science", "notebook", "grid"])
 
 
 def dSdt(t: list, S: list) -> list:
@@ -92,9 +95,9 @@ max_y = x_locs[max_index]
 plt.plot(angles, x_locs)
 plt.scatter(optimum_angle, max_y, color='red', zorder=5)  # Adding the point
 plt.annotate(f"Max. range: {max_y:.2f} m\nat angle: {optimum_angle:.2f}°", xy=(optimum_angle, max_y),
-             xytext=(optimum_angle-3, max_y-4),
+             xytext=(optimum_angle-5, max_y-4),
              arrowprops=dict(facecolor='black', arrowstyle='->'),
-             fontsize=10)
+             fontsize=14)
 plt.xlabel(r"Launch angles $\theta_0$ (°)")
 plt.ylabel("Range (m)")
 plt.title(r"Launch angles vs. travelled distance (range) for $V_0 = 50\; m/s$")
@@ -103,13 +106,13 @@ plt.grid(True)
 plt.show()
 
 # Plot x and y
-# plt.plot(x_sol, y_sol, label=f"Launch angle: {theta_0*180/np.pi}°\nInitial Velocity: {V_0} m/s")
-# plt.title("Projectile with air friction")
-# plt.ylabel(r"$y\; (m)$")
-# plt.xlabel(r"$x\; (m)$")
-# plt.ylim(top=30)
-# plt.ylim(bottom=0)
-# plt.legend()
-# plt.gca().set_aspect('equal', 'box')
-# plt.tight_layout()
-# plt.show()
+plt.plot(x_sol, y_sol, label=f"Launch angle: {theta_0*180/np.pi}°\nInitial Velocity: {V_0} m/s")
+plt.title("Projectile with air friction")
+plt.ylabel(r"$y\; (m)$")
+plt.xlabel(r"$x\; (m)$")
+plt.ylim(top=30)
+plt.ylim(bottom=0)
+plt.legend()
+plt.gca().set_aspect('equal', 'box')
+plt.tight_layout()
+plt.show()

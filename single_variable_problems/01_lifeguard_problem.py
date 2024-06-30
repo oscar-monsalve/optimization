@@ -1,5 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import scienceplots
+
+plt.style.use(["science", "notebook", "grid"])
 
 
 def lifeguard_time(x: list) -> list:
@@ -17,9 +20,9 @@ min_y = y[min_index]
 plt.plot(x, y, label='Lifeguard Time')
 plt.scatter(optimum_x, min_y, color='red', zorder=5)  # Adding the point
 plt.annotate(f'Min Time: {min_y:.2f}\nat x: {optimum_x:.2f}', xy=(optimum_x, min_y),
-             xytext=(optimum_x-8, min_y+5),
+             xytext=(optimum_x-12, min_y+5),
              arrowprops=dict(facecolor='black', arrowstyle='->'),
-             fontsize=10)
+             fontsize=14)
 
 plt.xlabel('x (m)')
 plt.ylabel(r'Time $t$ (s)')
